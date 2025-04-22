@@ -3,7 +3,6 @@ class Solution {
         
         String mainStr = s;
         int strLen = 0;
-        
         int zeroCount = 0;
         int rotCount = 0;
         
@@ -20,9 +19,7 @@ class Solution {
             strLen = 0;
             rotCount++;
         }
-        
         int[] answer = {rotCount, zeroCount};
-        
         return answer;
     }
 }
