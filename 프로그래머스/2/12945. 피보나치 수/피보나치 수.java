@@ -11,11 +11,8 @@ class Solution {
         if (memo.containsKey(num)) {
             return memo.get(num);
         }
-        if (num == 0) {
-            return 0;
-        }
-        else if (num == 1) {
-            return 1;
+        if (num == 0 || num == 1) {
+            return num;
         }
         result = (fib(num - 1) + fib(num - 2)) % 1234567;
         memo.put(num, result);
